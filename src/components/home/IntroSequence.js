@@ -48,7 +48,7 @@ export default function IntroSequence() {
           autoPlay
           muted
           playsInline
-          style={{ maxWidth: 'min(85vw, 520px)', width: 'auto', height: 'auto', opacity: phase >= 1 ? 1 : 0, transition: 'opacity 1s, transform 3s', transform: phase >= 1 ? 'scale(1)' : 'scale(0.95)' }}
+          style={{ maxWidth: 'min(90vw, 520px)', width: 'auto', height: 'auto', opacity: phase >= 1 ? 1 : 0, transition: 'opacity 1s, transform 3s', transform: phase >= 1 ? 'scale(1)' : 'scale(0.95)' }}
         />
 
         <p style={{
