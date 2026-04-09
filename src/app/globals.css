@@ -3098,3 +3098,303 @@ footer {
    max-width: 42rem;
    margin: 0 auto;
 }
+
+/* ══════════════════════════════════════════════════════════════════
+   🌅 SATVIC PAGE LAYOUT UTILITIES
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Page Hero ─────────────────────────────────────────────────── */
+.satvic-page-hero {
+   position: relative;
+   padding: 7rem 1.5rem 5rem;
+   overflow: hidden;
+   background: linear-gradient(135deg, #fffbf0 0%, #fff8e7 50%, #fff3d0 100%);
+   border-bottom: 1px solid rgba(255,214,0,0.2);
+   text-align: center;
+}
+
+.satvic-page-hero::before {
+   content: '';
+   position: absolute;
+   top: -100px;
+   right: -100px;
+   width: 600px;
+   height: 600px;
+   background: radial-gradient(circle, rgba(255,214,0,0.25) 0%, transparent 70%);
+   border-radius: 50%;
+   pointer-events: none;
+}
+
+.satvic-page-hero::after {
+   content: '';
+   position: absolute;
+   bottom: -80px;
+   left: -80px;
+   width: 400px;
+   height: 400px;
+   background: radial-gradient(circle, rgba(255,140,0,0.12) 0%, transparent 70%);
+   border-radius: 50%;
+   pointer-events: none;
+}
+
+.satvic-page-hero-inner {
+   position: relative;
+   z-index: 10;
+   max-width: 48rem;
+   margin: 0 auto;
+}
+
+.satvic-page-hero-badge {
+   display: inline-flex;
+   align-items: center;
+   gap: 6px;
+   padding: 5px 16px;
+   border-radius: 50px;
+   background: rgba(255,140,0,0.12);
+   border: 1px solid rgba(255,140,0,0.3);
+   color: #c45c00;
+   font-weight: 700;
+   font-size: 0.72rem;
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   margin-bottom: 1.25rem;
+}
+
+.satvic-page-hero h1 {
+   font-size: clamp(2.2rem, 5vw, 3.5rem);
+   font-weight: 900;
+   color: #1a1a1a;
+   font-family: 'Playfair Display', Georgia, serif;
+   line-height: 1.15;
+   margin-bottom: 1rem;
+}
+
+.satvic-page-hero p {
+   font-size: 1.15rem;
+   color: #555;
+   line-height: 1.8;
+   max-width: 40rem;
+   margin: 0 auto;
+}
+
+/* ── Floating Info Card ─────────────────────────────────────────── */
+.satvic-info-card {
+   max-width: 72rem;
+   margin: -3rem auto 2.5rem;
+   padding: 0 1.5rem;
+   position: relative;
+   z-index: 20;
+}
+
+.satvic-info-card-inner {
+   background: #fff;
+   border-radius: 1.5rem;
+   box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+   border: 1px solid rgba(255,214,0,0.2);
+   padding: 2.5rem 3rem;
+}
+
+/* ── Feature Grid inside Info Card ─────────────────────────────── */
+.satvic-feature-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+   .satvic-feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (min-width: 900px) {
+   .satvic-feature-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+}
+
+/* Two-column responsive shorthand for info card layouts */
+@media (min-width: 768px) {
+   .md\:grid-cols-2 {
+      grid-template-columns: 1fr 1fr;
+   }
+}
+
+.satvic-feature-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 1.75rem 1.25rem;
+   border-radius: 1rem;
+   border: 2px solid #f3f4f6;
+   transition: all 0.3s;
+}
+
+.satvic-feature-item:hover {
+   border-color: rgba(255,214,0,0.6);
+   box-shadow: 0 8px 30px rgba(255,140,0,0.1);
+   transform: translateY(-3px);
+}
+
+.satvic-feature-icon {
+   width: 60px;
+   height: 60px;
+   background: linear-gradient(135deg, #FFF3D0, #FFE5A0);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 1.6rem;
+   margin-bottom: 1rem;
+}
+
+.satvic-feature-item h4 {
+   font-weight: 700;
+   color: #1a1a1a;
+   font-size: 1rem;
+   margin-bottom: 0.4rem;
+}
+
+.satvic-feature-item p {
+   font-size: 0.875rem;
+   color: #666;
+   line-height: 1.6;
+}
+
+/* ── Form Section ────────────────────────────────────────────────── */
+.satvic-form-section {
+   background: linear-gradient(180deg, #fffbf0 0%, #ffffff 100%);
+   padding: 3rem 1.5rem 5rem;
+}
+
+.satvic-form-section-inner {
+   max-width: 48rem;
+   margin: 0 auto;
+}
+
+.satvic-form-section-title {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+
+.satvic-form-section-title h2 {
+   font-size: 1.9rem;
+   font-weight: 800;
+   color: #1a1a1a;
+   margin-bottom: 0.5rem;
+   font-family: 'Playfair Display', Georgia, serif;
+}
+
+.satvic-form-section-title p {
+   font-size: 1rem;
+   color: #666;
+}
+
+/* ── Page Section ────────────────────────────────────────────────── */
+.satvic-page-section {
+   padding: 4rem 1.5rem;
+   max-width: 72rem;
+   margin: 0 auto;
+}
+
+.satvic-section-header {
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.satvic-section-header h2 {
+   font-size: 2rem;
+   font-weight: 800;
+   color: #1a1a1a;
+   font-family: 'Playfair Display', Georgia, serif;
+   margin-bottom: 0.75rem;
+}
+
+.satvic-section-header p {
+   font-size: 1.05rem;
+   color: #666;
+   max-width: 38rem;
+   margin: 0 auto;
+   line-height: 1.7;
+}
+
+.satvic-divider {
+   width: 60px;
+   height: 3px;
+   background: linear-gradient(90deg, #FF8C00, #FFD600);
+   border-radius: 2px;
+   margin: 0.75rem auto 0;
+}
+
+/* ── Value Card ──────────────────────────────────────────────────── */
+.satvic-value-card {
+   background: #fff;
+   border-radius: 1rem;
+   border: 1px solid #f0f0f0;
+   padding: 2rem;
+   transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.satvic-value-card:hover {
+   border-color: rgba(255,214,0,0.5);
+   box-shadow: 0 4px 20px rgba(255,140,0,0.08);
+}
+
+.satvic-value-card h3 {
+   font-size: 1.15rem;
+   font-weight: 700;
+   color: #1a1a1a;
+   margin-bottom: 0.5rem;
+   font-family: 'Playfair Display', Georgia, serif;
+}
+
+.satvic-value-card p {
+   font-size: 0.95rem;
+   color: #555;
+   line-height: 1.75;
+}
+
+/* ── CTA Band ────────────────────────────────────────────────────── */
+.satvic-cta-band {
+   background: linear-gradient(135deg, #fffbf0, #fff3d0);
+   border: 1px solid rgba(255,214,0,0.3);
+   border-radius: 1.5rem;
+   padding: 3rem 2rem;
+   text-align: center;
+   max-width: 42rem;
+   margin: 0 auto;
+}
+
+.satvic-cta-band h2 {
+   font-size: 1.8rem;
+   font-weight: 800;
+   color: #1a1a1a;
+   margin-bottom: 0.75rem;
+   font-family: 'Playfair Display', Georgia, serif;
+}
+
+.satvic-cta-band p {
+   font-size: 1rem;
+   color: #555;
+   margin-bottom: 1.75rem;
+   line-height: 1.7;
+}
+
+.satvic-cta-btn {
+   display: inline-block;
+   background: linear-gradient(135deg, #FF8C00, #FFD600);
+   color: #fff;
+   font-weight: 700;
+   font-size: 1rem;
+   padding: 0.9rem 2.5rem;
+   border-radius: 50px;
+   text-decoration: none;
+   box-shadow: 0 4px 20px rgba(255,140,0,0.3);
+   transition: all 0.3s;
+}
+
+.satvic-cta-btn:hover {
+   transform: translateY(-2px);
+   box-shadow: 0 8px 30px rgba(255,140,0,0.4);
+}
