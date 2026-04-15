@@ -426,13 +426,18 @@ export default function Navbar() {
           <li className="nav-item">
             <span className="nav-link">Programs <span className="nav-arrow">▼</span></span>
             <div className="desktop-dropdown mega-menu">
+
+              {/* Beginner Column */}
               <div className="mega-col beginner">
                 <span className="col-label">Beginner</span>
                 <Link href="/programs/city-camps" className="dropdown-link">Beginner City Camps</Link>
                 <Link href="/programs/home-journey" className="dropdown-link">Home Journey</Link>
                 <Link href="/programs/demo-workshops" className="dropdown-link">Demo Workshops</Link>
               </div>
+
               <div className="mega-divider" />
+
+              {/* Advanced Column */}
               <div className="mega-col advanced">
                 <span className="col-label">Advanced</span>
                 <Link href="/programs/urja-shivir" className="dropdown-link">5 Days Urja Shivir</Link>
@@ -440,12 +445,19 @@ export default function Navbar() {
                 <Link href="/programs/cosmic-vision" className="dropdown-link">18 Days Cosmic Vision</Link>
                 <Link href="/programs/savan-sadhana" className="dropdown-link">11 Days Savan Sadhna</Link>
               </div>
+
+              <div className="mega-divider" />
+
+              {/* Events Column */}
+              <div className="mega-col advanced">
+                <span className="col-label">Events</span>
+                <Link href="/events/swadiksha" className="dropdown-link">Swadiksha</Link>
+                <Link href="/events/param-utsav" className="dropdown-link">Param Utsav</Link>
+              </div>
+
             </div>
           </li>
-
           {/* EVENTS & TECHNIQUES */}
-          <li className="nav-item"><Link href="/events/swadiksha" className="nav-link">Swadiksha</Link></li>
-          <li className="nav-item"><Link href="/events/param-utsav" className="nav-link">Param Utsav</Link></li>
           <li className="nav-item"><Link href="/techniques" className="nav-link">Techniques</Link></li>
 
           {/* GET INVOLVED */}
