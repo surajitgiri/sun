@@ -57,9 +57,33 @@ const testimonials = [
         quote: "As a doctor, I was initially resistant to anything that seemed 'spiritual'. But the Sun To Human system is rooted in physiology, not faith. The oxygen retention science behind Navel Hammering is legitimate. My patients whom I recommended this to have shown measurable improvement.",
         tag: "Scientific Validation"
     },
+    {
+        name: "Rajesh Kumar",
+        city: "Delhi",
+        program: "Naye Drishtikon Wala Shivir",
+        rating: 5,
+        avatar: "☀️",
+        quote: "I was sceptical when my wife dragged me to the 6-day city camp. By day 3, I understood something profound — this is not spiritual theory, it is a practical science of the body and mind. My blood pressure readings have been normal ever since.",
+        tag: "Leader"
+    },
 ];
 
-const tags = ["All", "Energy & Healing", "Health Transformation", "Spiritual Growth", "Daily Practice", "Inner Freedom", "Scientific Validation"];
+const wellwishers = [
+    { name: "ArogyaPlus",   sector: "Wellness Tech",   initials: "AP", bg: "#E1F5EE", color: "#0F6E56", logoUrl: "https://images.unsplash.com/photo-1777033356671-59469ab29684?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+    { name: "SunVeda",      sector: "Ayurveda",         initials: "SV", bg: "#FAEEDA", color: "#854F0B", logoUrl: "https://plus.unsplash.com/premium_photo-1710787193589-bbf7cbf0563a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
+    { name: "PranaCore",    sector: "Health Foods",     initials: "PC", bg: "#EEEDFE", color: "#3C3489", logoUrl: "" },
+    { name: "ZenFlow",      sector: "Mindfulness App",  initials: "ZF", bg: "#FAECE7", color: "#993C1D", logoUrl: "" },
+    { name: "UrjaFoods",    sector: "Organic Foods",    initials: "UF", bg: "#EAF3DE", color: "#3B6D11", logoUrl: "" },
+    { name: "SattvikLife",  sector: "Lifestyle Brand",  initials: "SL", bg: "#FBEAF0", color: "#993556", logoUrl: "" },
+    { name: "BhoomiHerbs",  sector: "Herbal Remedies",  initials: "BH", bg: "#E6F1FB", color: "#185FA5", logoUrl: "" },
+    { name: "SuryaFit",     sector: "Fitness Studio",   initials: "SF", bg: "#FAEEDA", color: "#633806", logoUrl: "" },
+    { name: "AkashMedia",   sector: "Digital Media",    initials: "AM", bg: "#EEEDFE", color: "#26215C", logoUrl: "" },
+    { name: "PavanYoga",    sector: "Yoga Centers",     initials: "PY", bg: "#E1F5EE", color: "#085041", logoUrl: "" },
+    { name: "DharaFarms",   sector: "Organic Farming",  initials: "DF", bg: "#EAF3DE", color: "#27500A", logoUrl: "" },
+    { name: "ChaitanyaEdu", sector: "Education",        initials: "CE", bg: "#FAECE7", color: "#712B13", logoUrl: "" },
+  ];
+
+const tags = ["All", "Energy & Healing", "Health Transformation", "Spiritual Growth", "Daily Practice", "Inner Freedom", "Scientific Validation" , "Leader" , "Wellwishers"];
 
 export default function TestimonialsPage() {
     const [activeTag, setActiveTag] = useState("All");
@@ -141,6 +165,119 @@ export default function TestimonialsPage() {
 
             {/* Testimonial Cards */}
             <div style={{ maxWidth: '72rem', margin: '2rem auto 0', padding: '0 1.5rem' }}>
+               {activeTag === 'Wellwishers'?(
+                 <>
+                    {/**Text above the company logo */}
+                    <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+                            <span style={{
+                                display: 'inline-block',
+                                padding: '4px 14px',
+                                borderRadius: '50px',
+                                border:'1px solid #FDDC9E',
+                                background: 'rgba(255,140,0,0.08)',
+                                color: '#c45c00',
+                                fontSize: '0.75rem',
+                                fontWeight: 700,
+                                letterSpacing: '0.08em',
+                                textTransform: 'uppercase',
+                                marginBottom: '0.75rem',
+                            }}>
+                                🤝 Our Wellwishers
+                            </span>
+                            <h2 style={{
+                                fontSize: '1.75rem',
+                                fontWeight: 900,
+                                color: '#1a1a1a',
+                                fontFamily: "'Playfair Display', serif",
+                                margin: '0 0 0.5rem',
+                            }}>
+                                Organizations Walking With Us
+                            </h2>
+                            <p style={{
+                                fontSize: '0.95rem',
+                                color: '#888',
+                                maxWidth: '480px',
+                                margin: '0 auto',
+                                lineHeight: 1.7,
+                            }}>
+                                These companies and institutions believe in the Sun To Human path and stand with our mission of holistic transformation.
+                            </p>
+                        </div>
+                    <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(140px, 1fr))',
+                    gap: '1.25rem',
+                    }}>
+                    {wellwishers.map((w, i) => (
+                        <div
+                        key={i}
+                        style={{
+                            background: '#fff',
+                            border: '1px solid #f0f0f0',
+                            borderRadius: '1.25rem',
+                            padding: '1.5rem 1rem',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center',
+                            gap: '10px',
+                            transition: 'box-shadow 0.3s, border-color 0.3s, transform 0.3s',
+                            boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
+                        }}
+                        onMouseEnter={e => {
+                            e.currentTarget.style.boxShadow = '0 12px 40px rgba(255,140,0,0.12)';
+                            e.currentTarget.style.borderColor = 'rgba(255,214,0,0.5)';
+                            e.currentTarget.style.transform = 'translateY(-3px)';
+                        }}
+                        onMouseLeave={e => {
+                            e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.04)';
+                            e.currentTarget.style.borderColor = '#f0f0f0';
+                            e.currentTarget.style.transform = 'translateY(0)';
+                        }}
+                        >
+                        {/* Logo or Initials */}
+                            {w.logoUrl ? (
+                            <div style={{
+                                width: '80px', height: '80px', borderRadius: '50%',
+                                border:'2px solid #f0f0f0',
+                                overflow: 'hidden',
+                                flexShrink:0
+                            }}>
+                                <img
+                                src={w.logoUrl}
+                                alt={w.name}
+                                onError={e => {
+                                    // fallback to initials if image fails to load
+                                    e.currentTarget.parentElement.style.display = 'flex';
+                                    e.currentTarget.parentElement.style.alignItems = 'center';
+                                    e.currentTarget.parentElement.style.justifyContent = 'center';
+                                    e.currentTarget.parentElement.innerHTML = `<span style="font-size:1rem;font-weight:800;color:${w.color}">${w.initials}</span>`;
+                                    e.currentTarget.parentElement.style.background = w.bg;
+                                }}
+                                style={{
+                                    width: '100%', height: '100%',
+                                    objectFit: 'cover',
+                            
+                                }}
+                                />
+                            </div>
+                            ) : (
+                            <div style={{
+                                width: '80px', height: '80px', borderRadius: '50%',
+                                background: w.bg, color: w.color,
+                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                fontSize: '1.2rem', fontWeight: 800, letterSpacing: '0.02em',
+                                flexShrink:0
+                            }}>
+                                {w.initials}
+                            </div>
+                            )}
+                        <div style={{ fontWeight: 700, fontSize: '0.85rem', color: '#1a1a1a', textAlign: 'center' }}>{w.name}</div>
+                        <div style={{ fontSize: '0.75rem', color: '#888', textAlign: 'center' }}>{w.sector}</div>
+                        </div>
+                    ))}
+                    </div>
+               </>
+               ):(
                 <div style={{
                     display: 'grid',
                     gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
@@ -255,6 +392,8 @@ export default function TestimonialsPage() {
                         );
                     })}
                 </div>
+               )}
+                
             </div>
 
             {/* CTA Section */}
