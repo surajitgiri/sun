@@ -206,7 +206,7 @@ export default function BeginnerPrograms() {
                 >
                   <span style={{ fontSize: '1.8rem' }}>{c.flag}</span>
                   <span style={{ fontWeight: 700, fontSize: '0.95rem', color: '#1a1a1a' }}>{c.name}</span>
-                  <span style={{ fontSize: '0.72rem', color: '#aaa' }}>{c.venue}</span>
+                  <span style={{ fontSize: '0.72rem', color: '#c45c00', fontWeight: 600 , background: 'rgba(255,140,0,0.08)', padding: '2px 8px', borderRadius: '50px', marginTop: '2px' }}>📍{c.venue}</span>
                 </button>
               ))}
             </div>
@@ -314,7 +314,7 @@ export default function BeginnerPrograms() {
                     <button
                       className="btn-outline"
                       onClick={() => setShowCityPopup(true)}
-                      style={{ cursor: 'pointer', boxShadow:"revert" , background: 'transparent', padding: 0, font: 'inherit' }}
+                      style={{ cursor: 'pointer', boxShadow:"revert" , background: 'transparent', padding: '4px', font: 'inherit' }}
                     >
                       {city ? '📍 Change City →' : 'Find Your City →'}
                     </button>

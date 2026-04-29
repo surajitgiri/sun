@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState, useEffect, useCallback } from 'react';
+import Link from 'next/link'
 const SLIDES = [
   { type: 'video', src: '/videoplayback.webm', label: null },
   { type: 'image', src: '/guruji1.jpg', label: 'Yogic Sadhana' },
@@ -385,7 +386,17 @@ export default function HeroCarousel() {
                 <video ref={videoRef} src={slide.src} muted={muted} loop playsInline autoPlay />
               ) : (
                 <>
+                  <Link
+                     href="/about/pujya-param-aalay"
+                     draggable = {false}
+                     style={{display: 'block' , width: '100%' , height: '100%'}}
+                     onClick={e => {
+                          //prevent navigation if user was dragging
+                          if(Math.abs(offsetX) > 5) e.preventDefault();
+                     }}
+                  >
                   <img src={slide.src} alt={slide.label} draggable={false} />
+                  </Link>
                   {current === i && <div className="hc-label" key={`lbl-${i}`}>{slide.label}</div>}
                 </>
               )}
