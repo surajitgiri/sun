@@ -63,15 +63,141 @@ const testimonials = [
         quote: "As a doctor, I was initially resistant to anything that seemed 'spiritual'. But the Sun To Human system is rooted in physiology, not faith. The oxygen retention science behind Navel Hammering is legitimate. My patients whom I recommended this to have shown measurable improvement.",
         tag: "Scientific Validation"
     },
+    
+];
+
+const leaders = [
     {
-        name: "Rajesh Kumar",
-        city: "Delhi",
-        program: "Naye Drishtikon Wala Shivir",
-        rating: 5,
-        avatar: "☀️",
-        photoUrl: "https://images.unsplash.com/photo-1777221490079-b949ecac1a9e?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        quote: "I was sceptical when my wife dragged me to the 6-day city camp. By day 3, I understood something profound — this is not spiritual theory, it is a practical science of the body and mind. My blood pressure readings have been normal ever since.",
-        tag: "Leader"
+        name: "Narendra Modi",
+        role: "Prime Minister of India",
+        party: "BJP",
+        photoUrl: "/LeaderPhoto/narendramodi.jpg",
+        avatar: "🇮🇳",
+        since: "Supporter since 2019",
+        bg: "#FFF3E0",
+        color: "#E65100",
+        message: "The ancient wisdom of Surya Namaskar and sun-based living is deeply rooted in our Vedic heritage. The Sun To Human mission revives this timeless knowledge for modern India."
+    },
+    {
+        name: "Yogi Adityanath",
+        role: "Chief Minister, Uttar Pradesh",
+        party: "BJP",
+        photoUrl: "/LeaderPhoto/yogi-adityanath.png",
+        avatar: "🕉️",
+        since: "Supporter since 2020",
+        bg: "#FCE4EC",
+        color: "#880E4F",
+        message: "Dharma and health are inseparable. The Param Aalay path of solar living aligns with the yogic tradition that Uttar Pradesh proudly carries forward."
+    },
+    {
+        name: "Ashok Gehlot",
+        role: "Former CM, Rajasthan",
+        party: "INC",
+        photoUrl: "",
+        avatar: "🌵",
+        since: "Supporter since 2021",
+        bg: "#E8F5E9",
+        color: "#1B5E20",
+        message: "Rajasthan is the land of the sun. The Urja Shivir camps in Jaipur have brought real, measurable health transformation to thousands of families in our state."
+    },
+    {
+        name: "Bhupesh Baghel",
+        role: "Former CM, Chhattisgarh",
+        party: "INC",
+        photoUrl: "",
+        avatar: "🌿",
+        since: "Supporter since 2022",
+        bg: "#E0F7FA",
+        color: "#006064",
+        message: "Our tribal communities have always lived in harmony with the sun. Param Aalay is restoring this ancient wisdom to the modern world in a scientific, accessible way."
+    },
+    {
+        name: "Eknath Shinde",
+        role: "Chief Minister, Maharashtra",
+        party: "Shiv Sena",
+        photoUrl: "",
+        avatar: "🐯",
+        since: "Supporter since 2022",
+        bg: "#FFF8E1",
+        color: "#FF6F00",
+        message: "Maharashtra has always been a land of saints and warriors. The Sun To Human path carries forward this tradition of self-mastery and inner strength."
+    },
+    {
+        name: "Nitish Kumar",
+        role: "Chief Minister, Bihar",
+        party: "JDU",
+        photoUrl: "",
+        avatar: "🌾",
+        since: "Supporter since 2021",
+        bg: "#F3E5F5",
+        color: "#4A148C",
+        message: "Chhath Puja has taught Bihar to revere the sun for millennia. The Param Aalay mission is a modern scientific expression of the same deep truth our ancestors lived."
+    },
+    {
+        name: "Arvind Kejriwal",
+        role: "Chief Minister, Delhi",
+        party: "AAP",
+        photoUrl: "",
+        avatar: "🏛️",
+        since: "Supporter since 2022",
+        bg: "#E3F2FD",
+        color: "#0D47A1",
+        message: "Delhi needs healing — of its air, its stress, and its spirit. The Naye Drishtikon camps have touched thousands of Delhi families with practical, life-changing tools."
+    },
+    {
+        name: "Shivraj Singh Chouhan",
+        role: "Former CM, Madhya Pradesh",
+        party: "BJP",
+        photoUrl: "",
+        avatar: "🌻",
+        since: "Supporter since 2020",
+        bg: "#FFFDE7",
+        color: "#F57F17",
+        message: "Madhya Pradesh is the heart of India, and the heart must be healthy. The Sun To Human practices have transformed thousands of families across our state."
+    },
+    {
+        name: "Pema Khandu",
+        role: "Chief Minister, Arunachal Pradesh",
+        party: "BJP",
+        photoUrl: "",
+        avatar: "🏔️",
+        since: "Supporter since 2023",
+        bg: "#E8EAF6",
+        color: "#1A237E",
+        message: "The people of Arunachal rise with the first sun in India every morning. The Param Aalay mission honours this sacred relationship between humans and sunlight."
+    },
+    {
+        name: "Pramod Sawant",
+        role: "Chief Minister, Goa",
+        party: "BJP",
+        photoUrl: "",
+        avatar: "🌊",
+        since: "Supporter since 2023",
+        bg: "#E0F2F1",
+        color: "#004D40",
+        message: "Goa is blessed with abundant sunlight year-round. The Urja Shivir programs have shown our people how to transform this natural gift into cellular vitality and inner peace."
+    },
+    {
+        name: "Himanta Biswa Sarma",
+        role: "Chief Minister, Assam",
+        party: "BJP",
+        photoUrl: "",
+        avatar: "🦏",
+        since: "Supporter since 2022",
+        bg: "#FBE9E7",
+        color: "#BF360C",
+        message: "Assam's rich tradition of Sattriya culture and nature-based living resonates deeply with the Sun To Human path. We welcome this mission to the Northeast with open hearts."
+    },
+    {
+        name: "M. K. Stalin",
+        role: "Chief Minister, Tamil Nadu",
+        party: "DMK",
+        photoUrl: "",
+        avatar: "🌺",
+        since: "Supporter since 2023",
+        bg: "#EFEBE9",
+        color: "#3E2723",
+        message: "Tamil Nadu has a proud scientific temperament. The Sun To Human system's evidence-based approach to solar living resonates strongly with our rationalist tradition of wellness."
     },
 ];
 
@@ -633,6 +759,151 @@ export default function TestimonialsPage() {
                                 </div>
                             ))}
                         </div>
+                    </>
+                ) : activeTag === 'Leader' ?(
+                    <>
+                      {/* Grid */}
+<div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+    gap: '1.5rem',
+}}>
+    {leaders.map((l, i) => (
+        <div
+            key={i}
+            style={{
+                background: '#fff',
+                border: '1px solid #f0f0f0',
+                borderRadius: '1.25rem',
+                overflow: 'hidden',
+                transition: 'box-shadow 0.3s, transform 0.3s',
+                boxShadow: '0 2px 12px rgba(0,0,0,0.04)',
+                cursor: 'default',
+            }}
+            onMouseEnter={e => {
+                e.currentTarget.style.boxShadow = `0 16px 40px ${l.color}22`;
+                e.currentTarget.style.transform = 'translateY(-4px)';
+            }}
+            onMouseLeave={e => {
+                e.currentTarget.style.boxShadow = '0 2px 12px rgba(0,0,0,0.04)';
+                e.currentTarget.style.transform = 'translateY(0)';
+            }}
+        >
+            {/* Colored top banner */}
+            <div style={{
+                background: l.bg,
+                padding: '1.5rem 1rem 3.5rem',
+                position: 'relative',
+                display: 'flex',
+                justifyContent: 'center',
+            }}>
+                {/* Party badge top-right */}
+                <span style={{
+                    position: 'absolute', top: '12px', right: '12px',
+                    padding: '3px 10px', borderRadius: '50px',
+                    background: '#fff',
+                    color: l.color,
+                    fontSize: '0.68rem', fontWeight: 800,
+                    letterSpacing: '0.04em',
+                    border: `1px solid ${l.color}33`,
+                }}>
+                    {l.party}
+                </span>
+
+                {/* Since badge top-left */}
+                <span style={{
+                    position: 'absolute', top: '12px', left: '12px',
+                    padding: '3px 8px', borderRadius: '50px',
+                    background: 'rgba(255,255,255,0.7)',
+                    color: '#888',
+                    fontSize: '0.62rem', fontWeight: 600,
+                }}>
+                    {l.since.replace('Supporter ', '')}
+                </span>
+            </div>
+
+            {/* Avatar — overlaps the banner */}
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                marginTop: '-40px',
+                marginBottom: '0.75rem',
+                position: 'relative',
+                zIndex: 2,
+            }}>
+                {l.photoUrl ? (
+                    <div style={{
+                        width: '80px', height: '80px', borderRadius: '50%',
+                        border: '3px solid #fff',
+                        boxShadow: `0 4px 16px ${l.color}33`,
+                        overflow: 'hidden', flexShrink: 0,
+                        background: l.bg,
+                    }}>
+                        <img
+                            src={l.photoUrl}
+                            alt={l.name}
+                            onError={e => {
+                                e.currentTarget.parentElement.style.display = 'flex';
+                                e.currentTarget.parentElement.style.alignItems = 'center';
+                                e.currentTarget.parentElement.style.justifyContent = 'center';
+                                e.currentTarget.parentElement.style.fontSize = '2rem';
+                                e.currentTarget.parentElement.innerHTML = l.avatar;
+                            }}
+                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        />
+                    </div>
+                ) : (
+                    <div style={{
+                        width: '80px', height: '80px', borderRadius: '50%',
+                        background: l.bg,
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        fontSize: '2rem', flexShrink: 0,
+                        border: '3px solid #fff',
+                        boxShadow: `0 4px 16px ${l.color}22`,
+                    }}>
+                        {l.avatar}
+                    </div>
+                )}
+            </div>
+
+            {/* Card body */}
+            <div style={{ padding: '0 1.25rem 1.5rem', textAlign: 'center' }}>
+                <div style={{
+                    fontWeight: 800, fontSize: '0.95rem',
+                    color: '#1a1a1a', marginBottom: '0.2rem',
+                    fontFamily: "'Playfair Display', serif",
+                }}>
+                    {l.name}
+                </div>
+                <div style={{
+                    fontSize: '0.75rem', color: l.color,
+                    fontWeight: 600, marginBottom: '1rem',
+                }}>
+                    {l.role}
+                </div>
+
+                {/* Divider */}
+                <div style={{
+                    height: '1px', background: '#f3f4f6',
+                    margin: '0 0 1rem',
+                }} />
+
+                {/* Message */}
+                <p style={{
+                    fontSize: '0.8rem', color: '#666',
+                    lineHeight: 1.75, fontStyle: 'italic',
+                    textAlign: 'left',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 4,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                }}>
+                    &ldquo;{l.message}&rdquo;
+                </p>
+            </div>
+        </div>
+    ))}
+</div>
                     </>
                 ) : (
                     <div style={{
