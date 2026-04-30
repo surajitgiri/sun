@@ -251,7 +251,7 @@ export default function PujyaParamAalayPage() {
                                             <span>📍 {event.location}</span>
                                         </p>
                                     </div>
-                                    <button className="whitespace-nowrap bg-[#b85c32] text-white px-6 py-2.5 font-semibold text-sm hover:bg-[#9a4b27] transition-colors shadow-sm">
+                                    <button className="whitespace-nowrap bg-[#b85c32] text-white px-10 py-6 font-semibold text-sm hover:bg-[#9a4b27] transition-colors shadow-sm">
                                         Register Now
                                     </button>
                                 </div>
