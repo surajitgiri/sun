@@ -68,23 +68,23 @@ const testimonials = [
 
 const leaders = [
     {
-        name: "Narendra Modi",
-        role: "Prime Minister of India",
-        party: "BJP",
-        photoUrl: "/LeaderPhoto/narendramodi.jpg",
+        name: "Ram Nath Kovind",
+        role: "Former President of India",
+        party: "",
+        photoUrl: "/LeaderPhoto/RK.jpeg",
         avatar: "🇮🇳",
-        since: "Supporter since 2019",
+        since: "2017-2022",
         bg: "#FFF3E0",
         color: "#E65100",
         message: "The ancient wisdom of Surya Namaskar and sun-based living is deeply rooted in our Vedic heritage. The Sun To Human mission revives this timeless knowledge for modern India."
     },
     {
-        name: "Yogi Adityanath",
-        role: "Chief Minister, Uttar Pradesh",
-        party: "BJP",
-        photoUrl: "/LeaderPhoto/yogi-adityanath.png",
+        name: "Mansukh Mandaviya",
+        role: "Labour Minister , India",
+        party: "",
+        photoUrl: "/LeaderPhoto/MM.jpeg",
         avatar: "🕉️",
-        since: "Supporter since 2020",
+        since: "2024-2029",
         bg: "#FCE4EC",
         color: "#880E4F",
         message: "Dharma and health are inseparable. The Param Aalay path of solar living aligns with the yogic tradition that Uttar Pradesh proudly carries forward."
